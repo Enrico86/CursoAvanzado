@@ -5,11 +5,25 @@
 
     <StackLayout>
         <Button x:Name="btnTask"
-                Text="Ejecutar"></Button>
+                Text="Ejecutar Display Alert"></Button>
+        <Button x:Name="btnTask2"
+                Text="Ejecutar cambio en el primer label"></Button>
+        <Button x:Name="btnTask3"
+                Text="Open URI"></Button>
+        <Button x:Name="btnTask4"
+                Text="FontSize según dispositivo"></Button>
+        <Button x:Name="btnTask5" 
+                Text="Start Timer"></Button>
+        <Button x:Name="btnTask6" 
+                Text="Styles en el segundo label"></Button>
         <Label Text="Probando la clase Device"
                VerticalOptions="CenterAndExpand"
                HorizontalOptions="CenterAndExpand"
                x:Name="statusLabel"></Label>
+        <Label Text="Probando la clase Styles"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               x:Name="stylesLabel"></Label>
     </StackLayout>
 
 </ContentPage>

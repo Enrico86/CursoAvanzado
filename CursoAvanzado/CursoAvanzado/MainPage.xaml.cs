@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace CursoAvanzado
@@ -20,6 +21,7 @@ namespace CursoAvanzado
             //btnTask.FontSize = sizeButton;
             //statusLabel.FontSize = sizeLabel;
             //statusLabel.FontSize = Device.OnPlatform(25,15,35);
+            btnTask2.Clicked += BtnTask2Clicked;
 
             //Device.OnPlatform
             //    (
@@ -44,7 +46,7 @@ namespace CursoAvanzado
                     size = 25;
                     break;
                 case Device.Android:
-                    size = 15;
+                    size = 45;
                     break;
                 case Device.UWP:
                     size = 35;
@@ -53,10 +55,10 @@ namespace CursoAvanzado
                     size = 0;
                     break;
             }
-            btnTask.FontSize = size;
+            btnTask4.FontSize = size;
 
             btnTask.Clicked += (sender,e)=>
-                {
+            {
                     switch (Device.RuntimePlatform)
                     {
                         case Device.iOS:
@@ -88,16 +90,56 @@ namespace CursoAvanzado
                             }
                             break;
                         case Device.UWP:
-                            DisplayAlert("WinPhone", "Prueba WinPhone", "OK");
+                            if (Device.Idiom == TargetIdiom.Phone)
+                            {
+                                DisplayAlert("WinPhone", "Estoy en un móvil con sistema operativo WinPhone", "OK");
+                            }
+                            else if (Device.Idiom == TargetIdiom.Tablet)
+                            {
+                                DisplayAlert("WinPhone", "Estoy en una tablet con sistema operativo WinPhone", "OK");
+                            }
+                            else
+                            {
+                                DisplayAlert("WinPhone", "Estoy en otro dispositivo WinPhone", "OK");
+                            }
                             break;
                         default:
-                            DisplayAlert("Error","No se ha estableciudo ningun mensaje para este dispositivo","OK");
+                            DisplayAlert("Error","No se ha establecido ningun mensaje para este dispositivo","OK");
                             break;
                     }
-                };
+            };
+
+            btnTask3.Clicked += BtnTask3_Clicked;
+            btnTask5.Clicked += BtnTask5_Clicked;
+            btnTask6.Clicked += BtnTask6_Clicked;
         }
 
-        private async void BtnTaskClicked(object sender, EventArgs e)
+        private void BtnTask6_Clicked(object sender, EventArgs e)
+        {
+            stylesLabel.Style = Device.Styles.TitleStyle;
+        }
+
+        private void BtnTask5_Clicked(object sender, EventArgs e)
+        {
+            int contador=0;
+            Device.StartTimer(new TimeSpan(0, 0, 1), () =>
+              {
+              while (contador<5)
+                  {
+                      DisplayAlert("Tiempo", $"Ha pasado {++contador} segundo/s", "OK");
+                      return true;
+                  }
+                  return false;
+              });
+        }
+
+        private void BtnTask3_Clicked(object sender, EventArgs e)
+        {
+            //Device.OpenUri(new Uri("https://www.gazzetta.it"));
+            Launcher.OpenAsync("https://www.gazzetta.it");
+        }
+
+        private async void BtnTask2Clicked(object sender, EventArgs e)
         {
             await WaitTime(3000).ContinueWith((args) =>
             {
@@ -112,5 +154,8 @@ namespace CursoAvanzado
         {
             await Task.Delay(time);
         }
+
+        
+
     }
 }
