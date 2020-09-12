@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -89,10 +89,14 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\XamlNamespaces.Controls\XamlNamespaces.Controls.csproj">
+      <Project>{b4b3b97c-cb3c-4300-a15f-9b2655274aa6}</Project>
+      <Name>XamlNamespaces.Controls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CursoAvanzado\CursoAvanzado.csproj">
       <Project>{A4D97B4F-505D-4FDA-9135-AF33EFC20B15}</Project>
       <Name>CursoAvanzado</Name>
     </ProjectReference>
   </ItemGroup>
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

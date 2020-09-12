@@ -128,6 +128,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\..\XamlNamespaces.Controls\XamlNamespaces.Controls.csproj">
+      <Project>{b4b3b97c-cb3c-4300-a15f-9b2655274aa6}</Project>
+      <Name>XamlNamespaces.Controls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CursoAvanzado\CursoAvanzado.csproj">
       <Project>{A4D97B4F-505D-4FDA-9135-AF33EFC20B15}</Project>
       <Name>CursoAvanzado</Name>

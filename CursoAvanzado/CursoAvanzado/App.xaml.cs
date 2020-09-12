@@ -10,7 +10,7 @@ namespace CursoAvanzado
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new AtributosDeNamespaceX();
         }
 
         protected override void OnStart()

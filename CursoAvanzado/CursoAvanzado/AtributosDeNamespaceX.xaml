@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CursoAvanzado"
+             xmlns:controles="clr-namespace:CursoAvanzado.Controles"
+             xmlns:controlesProyectoExterno="clr-namespace:XamlNamespaces.Controls;assembly=XamlNamespaces.Controls"
+             xmlns:ctrlsProjExterno2="clr-namespace:XamlNamespaces.Controls.Controls;assembly=XamlNamespaces.Controls"
+             x:Class="CursoAvanzado.AtributosDeNamespaceX">
+    <StackLayout x:Name="stackLayoutPrueba">
+        <StackLayout.Margin>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS" Value="0,20,0,0"></On>
+                <On Platform="Android" Value="10,20"></On>
+                <On Platform="WinPhone, Windows"  Value="30"></On>
+            </OnPlatform>
+        </StackLayout.Margin>
+        <BoxView x:Name="box">
+            <BoxView.Color>
+                <Color>
+                    <x:Arguments>
+                        <x:Double>.13</x:Double>
+                        <x:Double>.23</x:Double>
+                        <x:Double>.37</x:Double>
+                    </x:Arguments>
+                </Color>
+            </BoxView.Color>
+        </BoxView>
+        <BoxView>
+            <BoxView.Color>
+                <Color x:FactoryMethod="FromRgb">
+                    <x:Arguments>
+                        <x:Int32>189</x:Int32>
+                        <x:Int32>23</x:Int32>
+                        <x:Int32>162</x:Int32>
+                    </x:Arguments>
+                </Color>
+            </BoxView.Color>
+        </BoxView>
+        <BoxView>
+            <BoxView.Color>
+                <Color x:FactoryMethod="FromHex">
+                    <x:Arguments>
+                        <x:String>#FF328323</x:String>
+                    </x:Arguments>
+                </Color>
+            </BoxView.Color>
+        </BoxView>
+        <local:MyButton Text="Prueba MyButton"></local:MyButton>
+        <controles:MyButton2 Text="Prueba MyButton2"></controles:MyButton2>
+        <controlesProyectoExterno:MyButton3 Text="MyButton3 Externo"></controlesProyectoExterno:MyButton3>
+        <ctrlsProjExterno2:MyButton4 Text="MyButton4 Externo"></ctrlsProjExterno2:MyButton4> 
+    </StackLayout>
+</ContentPage>
