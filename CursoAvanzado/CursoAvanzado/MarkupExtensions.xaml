@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:rainbow="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
+             rainbow:DebugRainbow.ShowColors="False"
+             xmlns:theme="clr-namespace:CursoAvanzado.Themes"
+             xmlns:extensions="clr-namespace:MarkupExtensions.Extensions;assembly=MarkupExtensions.Extensions"
+             x:Class="CursoAvanzado.MarkupExtensions">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:Array Type="{x:Type x:String}"
+                     x:Key="namesArray">
+                <x:String>Enrico</x:String>
+                <x:String>Anais</x:String>
+                <x:String>Lise</x:String>
+                <x:String>Lidia</x:String>
+            </x:Array>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblTexto" 
+                   Text="Label 1"
+                   Margin="10"/>
+            <Label x:Name="lblTexto2"
+                   Text="Label 2"></Label>
+            <Label x:Name="lblTexto3"
+                   Text="Label 3"></Label>
+            <Label x:Name="lblTexto4"
+                   Text="Prueba STATIC EXTENSION"
+                   FontAttributes="{x:Static FontAttributes.Bold}"
+                   TextColor="{x:Static Color.DarkBlue}">
+            </Label>
+            <Label Text="DarkTheme Label"
+                   BackgroundColor="{x:Static theme:DarkTheme.BackgroundColor}"
+                   TextColor="{x:Static theme:DarkTheme.FontColor}"></Label>
+            <Label Text="LightTheme Label"
+                   BackgroundColor="{x:Static theme:LightTheme.BackgroundColor}"
+                   TextColor="{x:Static theme:LightTheme.FontColor}"></Label>
+            <Label Text="{extensions:Add Numero1=17,Numero2=52}"></Label>
+            <Image WidthRequest="200"
+                   HeightRequest="200"
+                   Source="{extensions:ImageResource Source=Images.Help.png}"></Image>
+            <ListView ItemsSource="{StaticResource namesArray}"></ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

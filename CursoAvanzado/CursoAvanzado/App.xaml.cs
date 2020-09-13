@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using MarkupExtensions.Extensions;
 
 namespace CursoAvanzado
 {
@@ -9,8 +10,8 @@ namespace CursoAvanzado
         public App()
         {
             InitializeComponent();
-
-            MainPage = new AtributosDeNamespaceX();
+            Extension.Init();
+            MainPage = new MarkupExtensions();
         }
 
         protected override void OnStart()

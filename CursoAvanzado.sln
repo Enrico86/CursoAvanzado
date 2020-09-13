@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoAvanzado.iOS", "CursoA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoAvanzado", "CursoAvanzado\CursoAvanzado\CursoAvanzado.csproj", "{6EA44503-35D1-4661-8411-5F4B7ABDFCDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlNamespaces.Controls", "XamlNamespaces.Controls\XamlNamespaces.Controls.csproj", "{B4B3B97C-CB3C-4300-A15F-9B2655274AA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamlNamespaces.Controls", "XamlNamespaces.Controls\XamlNamespaces.Controls.csproj", "{B4B3B97C-CB3C-4300-A15F-9B2655274AA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkupExtensions.Extensions", "MarkupExtensions.Extensions\MarkupExtensions.Extensions.csproj", "{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,18 @@ Global
 		{B4B3B97C-CB3C-4300-A15F-9B2655274AA6}.Release|iPhone.Build.0 = Release|Any CPU
 		{B4B3B97C-CB3C-4300-A15F-9B2655274AA6}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{B4B3B97C-CB3C-4300-A15F-9B2655274AA6}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}.Release|iPhone.Build.0 = Release|Any CPU
+		{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{D3B8E683-DC68-4D8E-91E7-3CFAC2A8833C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
