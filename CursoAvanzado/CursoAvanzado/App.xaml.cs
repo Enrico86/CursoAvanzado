@@ -11,7 +11,7 @@ namespace CursoAvanzado
         {
             InitializeComponent();
             Extension.Init();
-            MainPage = new MarkupExtensions();
+            MainPage = new BindableProperties();
         }
 
         protected override void OnStart()
