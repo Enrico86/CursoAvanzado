@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CursoAvanzado"
+             xmlns:attached="clr-namespace:CursoAvanzado.AttachedProps"
+             x:Class="CursoAvanzado.AttachedProperties">
+    <StackLayout>
+        <!--<Label Text="Welcome to Xamarin.Forms!"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand"
+               x:Name="lblAttachedTest"
+               local:Attached.IsAttached="True"/>
+        <Button Text="Test"
+                x:Name="btnGetValue"></Button>-->
+        <Label Text="Welcome to Xamarin.Forms!"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand"
+               x:Name="lblMainText"
+               attached:OlderAttached.IsForOlderPeople="True"></Label>
+        <Entry Text="Welcome"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               attached:OlderAttached.IsForOlderPeople="True"
+               x:Name="txtMainText"></Entry>
+        <Button x:Name="btnIsAttached"
+                Text="Test"></Button>
+    </StackLayout>
+</ContentPage>

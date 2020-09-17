@@ -11,7 +11,7 @@ namespace CursoAvanzado
         {
             InitializeComponent();
             Extension.Init();
-            MainPage = new BindableProperties();
+            MainPage = new StepperDemo();
         }
 
         protected override void OnStart()
