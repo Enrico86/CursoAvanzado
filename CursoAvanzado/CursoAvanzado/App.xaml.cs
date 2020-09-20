@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using MarkupExtensions.Extensions;
+using CursoAvanzado.Effects;
 
 namespace CursoAvanzado
 {
@@ -11,7 +12,7 @@ namespace CursoAvanzado
         {
             InitializeComponent();
             Extension.Init();
-            MainPage = new StepperDemo();
+            MainPage = new Transformaciones();
         }
 
         protected override void OnStart()

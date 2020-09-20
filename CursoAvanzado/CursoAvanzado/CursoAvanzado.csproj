@@ -22,25 +22,31 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="AtributosDeNamespaceX.xaml">
+    <EmbeddedResource Update="Views\AtributosDeNamespaceX.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="AttachedProperties.xaml">
+    <EmbeddedResource Update="Views\AttachedProperties.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="BindableProperties.xaml">
+    <EmbeddedResource Update="Views\BindableProperties.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="CompilacionXAML.xaml">
+    <EmbeddedResource Update="Views\CompilacionXAML.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ContetViews\Header.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MarkupExtensions.xaml">
+    <EmbeddedResource Update="Effects\EfectoLetras.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="StepperDemo.xaml">
+    <EmbeddedResource Update="Views\MarkupExtensions.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\StepperDemo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Transformaciones.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

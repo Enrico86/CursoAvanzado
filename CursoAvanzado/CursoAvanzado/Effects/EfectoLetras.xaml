@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CursoAvanzado.Effects.EfectoLetras">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="72"></Setter>
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+                <Setter Property="HorizontalOptions" Value="Center"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White"
+                     Padding="25">
+            <Grid>
+                <Label Text="Xamarin"
+                       TextColor="Black"></Label>
+                <Label Text="Xamarin"
+                       TextColor="Black"
+                       TranslationX="5"
+                       TranslationY="5"
+                       Opacity="0.5"></Label>
+            </Grid>
+            <Grid>
+                <Label Text="Forms"
+                       TextColor="Black"
+                       TranslationX="2"
+                       TranslationY="2"></Label>
+                <Label Text="Forms"
+                       TextColor="White"></Label>
+            </Grid>
+            <Grid>
+                <Label Text="Effects"
+                       TextColor="Black"
+                       TranslationX="-2"
+                       TranslationY="-2"></Label>
+                <Label Text="Effects"
+                       TextColor="White"></Label>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

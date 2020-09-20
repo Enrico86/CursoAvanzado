@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CursoAvanzado.Transformaciones">
+    <StackLayout Padding="20,10">
+        <Frame x:Name="frame"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                OutlineColor="CadetBlue">
+        <Label Text="Soy Cool"
+               FontSize="Large"></Label>
+        </Frame>
+        <Slider x:Name="xSlider"
+                Minimum="-200"
+                Maximum="200"
+                Value="{Binding Source={x:Reference frame}, Path=TranslationX}"></Slider>
+        <Label HorizontalOptions="Center"
+               FontSize="Large"
+               Text="{Binding Source={x:Reference xSlider}, Path=Value, StringFormat='Translation X = {0:F0}'}"></Label>
+        <Slider x:Name="ySlider"
+                Minimum="-200"
+                Maximum="200"
+                Value="{Binding Source={x:Reference frame}, Path=TranslationY}"></Slider>
+        <Label HorizontalOptions="Center"
+               FontSize="Large"
+               Text="{Binding Source={x:Reference ySlider}, Path=Value, StringFormat='Translation Y = {0:F0}'}"></Label>
+        <Slider x:Name="scaleSlider"
+                Minimum="-3"
+                Maximum="3"
+                Value="{Binding Source={x:Reference frame}, Path=Scale}"></Slider>
+        <Label HorizontalOptions="Center"
+               FontSize="Large"
+               Text="{Binding Source={x:Reference scaleSlider}, Path=Value, StringFormat='Scale = {0:F2}'}"></Label>
+        <Slider x:Name="scaleXSlider"
+                Minimum="-3"
+                Maximum="3"
+                Value="{Binding Source={x:Reference frame}, Path=ScaleX, Mode=TwoWay}"></Slider>
+        <Label HorizontalOptions="Center"
+               FontSize="Large"
+               Text="{Binding Source={x:Reference scaleXSlider}, Path=Value, StringFormat='Scale X = {0:F2}'}"></Label>
+        <Slider x:Name="scaleYSlider"
+                Minimum="-3"
+                Maximum="3"
+                Value="{Binding Source={x:Reference frame}, Path=ScaleY, Mode=TwoWay}"
+                MaximumTrackColor="Green"
+                MinimumTrackColor="Red"
+                ThumbColor="Yellow"></Slider>
+        <Label HorizontalOptions="Center"
+               FontSize="Large"
+               Text="{Binding Source={x:Reference scaleYSlider}, Path=Value, StringFormat='Scale Y = {0:F2}'}"></Label>
+        <Slider x:Name="rotationSlider"
+                Minimum="0"
+                Maximum="360"
+                Value="{Binding Source={x:Reference frame}, Path=Rotation}"
+                MaximumTrackColor="Green"
+                MinimumTrackColor="Red"
+                ThumbColor="Yellow"></Slider>
+        <Label HorizontalOptions="Center"
+               FontSize="Large"
+               Text="{Binding Source={x:Reference rotationSlider}, Path=Value, StringFormat='Rotation = {0:F0}'}"></Label>
+        <Slider x:Name="rotationXSlider"
+                Minimum="0"
+                Maximum="360"
+                Value="{Binding Source={x:Reference frame}, Path=RotationX}"
+                MaximumTrackColor="Green"
+                MinimumTrackColor="Red"
+                ThumbColor="Yellow"></Slider>
+        <Label HorizontalOptions="Center"
+               FontSize="Large"
+               Text="{Binding Source={x:Reference rotationXSlider}, Path=Value, StringFormat='Rotation X = {0:F0}'}"></Label>
+        <Slider x:Name="rotationYSlider"
+                Minimum="0"
+                Maximum="360"
+                Value="{Binding Source={x:Reference frame}, Path=RotationY}"
+                MaximumTrackColor="Green"
+                MinimumTrackColor="Red"
+                ThumbColor="Yellow"></Slider>
+        <Label HorizontalOptions="Center"
+               FontSize="Large"
+               Text="{Binding Source={x:Reference rotationYSlider}, Path=Value, StringFormat='Rotation Y = {0:F0}'}"></Label>
+    </StackLayout>
+</ContentPage>
