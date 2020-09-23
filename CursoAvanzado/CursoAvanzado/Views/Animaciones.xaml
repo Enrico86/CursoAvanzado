@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CursoAvanzado.Views.Animaciones">
+    <ContentPage.Content>
+        <StackLayout Margin="0,20,0,0">
+            <Image x:Name="image"
+                   Source="Pokeball.png"
+                   HeightRequest="100"
+                   WidthRequest="100"
+                   VerticalOptions="CenterAndExpand"
+                   Opacity="1"
+                   TranslationY="-400"></Image>
+            <Button x:Name="startButton"
+                    Text="Iniciar animación"
+                    Clicked="OnStartAnimationButtonClicked"
+                    VerticalOptions="End"></Button>
+            <Button x:Name="cancelButton"
+                    Text="Detener animación"
+                    Clicked="OnCancelAnimationButtonClicked"                 
+                    IsEnabled="False"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

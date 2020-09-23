@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using MarkupExtensions.Extensions;
 using CursoAvanzado.Effects;
+using CursoAvanzado.Views;
 
 namespace CursoAvanzado
 {
@@ -12,7 +13,7 @@ namespace CursoAvanzado
         {
             InitializeComponent();
             Extension.Init();
-            MainPage = new Transformaciones();
+            MainPage = new MyAnimations();
         }
 
         protected override void OnStart()
