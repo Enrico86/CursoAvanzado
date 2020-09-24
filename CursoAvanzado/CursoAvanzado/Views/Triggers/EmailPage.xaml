@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:triggers="clr-namespace:CursoAvanzado.Views.Triggers"
+             x:Class="CursoAvanzado.Views.Triggers.EmailPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Email"
+                   Keyboard="Email">
+                <Entry.Triggers>
+                    <EventTrigger Event="TextChanged">
+                        <triggers:EmailValidationAction>
+                        </triggers:EmailValidationAction>
+                    </EventTrigger>
+                </Entry.Triggers>
+            </Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

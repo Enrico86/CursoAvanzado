@@ -4,6 +4,7 @@ using Xamarin.Forms.Xaml;
 using MarkupExtensions.Extensions;
 using CursoAvanzado.Effects;
 using CursoAvanzado.Views;
+using CursoAvanzado.Views.Triggers;
 
 namespace CursoAvanzado
 {
@@ -13,7 +14,7 @@ namespace CursoAvanzado
         {
             InitializeComponent();
             Extension.Init();
-            MainPage = new MyAnimations();
+            MainPage = new LogInPage();
         }
 
         protected override void OnStart()

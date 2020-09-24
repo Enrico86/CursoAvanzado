@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CursoAvanzado.Views.Triggers"
+             x:Class="CursoAvanzado.Views.Triggers.EventTriggersDemoPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Email"
+                   AnchorX="0">
+                <Entry.Triggers>
+                    <EventTrigger Event="Focused">
+                        <local:ScaleAction Anchor="0,0.5"
+                                           Lenght="1000"
+                                           Scale="2"
+                                           EasingType="Easing.SpringIn"></local:ScaleAction>
+                    </EventTrigger>
+                    <EventTrigger Event="Unfocused">
+                        <local:ScaleAction Anchor="0,0.5"
+                                           Lenght="1000"
+                                           Scale="1"
+                                           EasingType="SpringOut"></local:ScaleAction>
+                    </EventTrigger>
+                </Entry.Triggers>
+            </Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

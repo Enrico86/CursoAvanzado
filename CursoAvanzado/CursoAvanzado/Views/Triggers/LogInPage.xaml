@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converter="clr-namespace:CursoAvanzado.Converters"
+             Visual="Material"
+             x:Class="CursoAvanzado.Views.Triggers.LogInPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:RequiredConverter x:Key="hasData"></converter:RequiredConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="10"
+                     Margin="20">
+            <Entry Margin="20,0"
+                   Placeholder="UserName"
+                   HeightRequest="60"
+                   Text=""
+                   x:Name="lblUserName"></Entry>
+            <Entry Margin="20,0"
+                   IsPassword="True"
+                   Placeholder="Password"
+                   x:Name="lblPassword"
+                   HeightRequest="60"
+                   Text=""></Entry>
+            <Button Text="Iniciar sesión"
+                    IsEnabled="False">
+                <Button.Triggers>
+                    <MultiTrigger TargetType="Button">
+                        <MultiTrigger.Conditions>
+                            <BindingCondition Binding="{Binding 
+                                                Source={x:Reference lblUserName}, 
+                                                Path=Text.Length,
+                                                Converter={StaticResource hasData}}"
+                                                Value="true"></BindingCondition>
+                            <BindingCondition Binding="{Binding 
+                                                Source={x:Reference lblPassword}, 
+                                                Path=Text.Length, 
+                                                Converter={StaticResource hasData}}"
+                                                Value="true"></BindingCondition>
+                        </MultiTrigger.Conditions>
+                        <Setter Property="IsEnabled" Value="True"></Setter>
+                    </MultiTrigger>
+                </Button.Triggers>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
