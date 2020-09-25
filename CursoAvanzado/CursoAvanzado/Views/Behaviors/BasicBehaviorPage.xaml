@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:CursoAvanzado.Views.Behaviors"
+             x:Class="CursoAvanzado.Views.Behaviors.BasicBehaviorPage"
+             Visual="Material">
+    <ContentPage.Resources>
+        <!--<ResourceDictionary>
+            <Style TargetType="Entry">
+                <Style.Behaviors>
+                    <behaviors:BasicBehavior></behaviors:BasicBehavior>
+                </Style.Behaviors>
+            </Style>
+        </ResourceDictionary>-->
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<Entry Placeholder="Email Behavior 'normal'">
+                <Entry.Behaviors>
+                    <behaviors:EmailBehavior x:Name="isValidEmailnormal"></behaviors:EmailBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <Button Text="LogIn"
+                    IsEnabled="{Binding Source={x:Reference isValidEmailnormal}, Path=IsValid}"></Button>-->
+            <Entry Placeholder="Email Behavior BindableProperty"
+                   TextColor="Blue">
+                <Entry.Behaviors>
+                    <behaviors:EmailBehavior ErrorTextColor="Orange"
+                                             x:Name="isValidEmail"></behaviors:EmailBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <Button Text="LogIn"
+                    IsEnabled="{Binding Source={x:Reference isValidEmail}, Path=IsValid}"></Button>
+            <Entry Placeholder="Email Behavior Default Color">
+                <Entry.Behaviors>
+                    <behaviors:EmailBehavior ErrorTextColor="DarkRed" 
+                                             x:Name="isValidEmail2"></behaviors:EmailBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <Button Text="LogIn"
+                    IsEnabled="{Binding Source={x:Reference isValidEmail2}, Path=IsValid}"></Button>
+            <!--<Entry Placeholder="Surname"></Entry>
+            <Entry Placeholder="Age"></Entry>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

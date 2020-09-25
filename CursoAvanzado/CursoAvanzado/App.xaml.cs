@@ -5,6 +5,7 @@ using MarkupExtensions.Extensions;
 using CursoAvanzado.Effects;
 using CursoAvanzado.Views;
 using CursoAvanzado.Views.Triggers;
+using CursoAvanzado.Views.Behaviors;
 
 namespace CursoAvanzado
 {
@@ -14,7 +15,7 @@ namespace CursoAvanzado
         {
             InitializeComponent();
             Extension.Init();
-            MainPage = new LogInPage();
+            MainPage = new ListViewTest();
         }
 
         protected override void OnStart()

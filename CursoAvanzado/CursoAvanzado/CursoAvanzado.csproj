@@ -13,6 +13,7 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms.BehaviorsPack" Version="2.1.1" />
     <PackageReference Include="Xamarin.Forms.DebugRainbows" Version="1.1.4" />
     <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.6.0.1141" />
   </ItemGroup>
@@ -36,6 +37,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\AttachedProperties.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Behaviors\BasicBehaviorPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Behaviors\ListViewTest.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\BindableProperties.xaml">
