@@ -64,11 +64,17 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Effects\FontEffect.cs" />
+    <Compile Include="Effects\SelectAllEffect.cs" />
+    <Compile Include="Effects\SimpleSliderEffect.cs" />
+    <Compile Include="Effects\UnderlineEffect.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\Miracle Day.ttf" />
+    <AndroidAsset Include="Assets\SweetHipster.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />

@@ -63,11 +63,17 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Effects\FontEffect.cs" />
+    <Compile Include="Effects\SelectAllEffect.cs" />
+    <Compile Include="Effects\SimpleSliderEffect.cs" />
+    <Compile Include="Effects\UnderlineEffect.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Resources\Miracle Day.ttf" />
+    <Content Include="Resources\Sweet Hipster.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

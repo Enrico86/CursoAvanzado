@@ -32,6 +32,11 @@
     <string>LaunchScreen</string>
     <key>CFBundleName</key>
     <string>CursoAvanzado</string>
+    <key>UIAppFonts</key>
+      <array>
+        <string>Miracle Day.ttf</string>
+        <string>Sweet Hipster.ttf</string>
+      </array>
     <key>XSAppIconAssets</key>
     <string>Assets.xcassets/AppIcon.appiconset</string>
 </dict>

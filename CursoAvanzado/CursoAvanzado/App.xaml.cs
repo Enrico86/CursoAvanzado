@@ -6,6 +6,7 @@ using CursoAvanzado.Effects;
 using CursoAvanzado.Views;
 using CursoAvanzado.Views.Triggers;
 using CursoAvanzado.Views.Behaviors;
+using CursoAvanzado.Views.Effects;
 
 namespace CursoAvanzado
 {
@@ -15,7 +16,7 @@ namespace CursoAvanzado
         {
             InitializeComponent();
             Extension.Init();
-            MainPage = new ListViewTest();
+            MainPage = new EffectsDemo();
         }
 
         protected override void OnStart()

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:effects="clr-namespace:CursoAvanzado.Views.Effects"
+             x:Class="CursoAvanzado.Views.Effects.EffectsDemo">
+    <ContentPage.Content>
+        <StackLayout Margin="30">
+            <Slider x:Name="mySlider"></Slider>
+            <Slider x:Name="mySlider2">
+                <Slider.Effects>
+                    <effects:SliderEffect></effects:SliderEffect>
+                </Slider.Effects>
+            </Slider>
+            <Switch x:Name="switchEffect"
+                    Toggled="switchEffect_Toggled"
+                    IsToggled="True"></Switch>
+            <Label Text="Prueba subrayado">
+                <Label.Effects>
+                    <effects:UnderlineEffect></effects:UnderlineEffect>
+                </Label.Effects>
+            </Label>
+            <Entry Text="Texto de prueba que se tiene que seleccionar">
+                <Entry.Effects>
+                    <effects:SelectAllEffect></effects:SelectAllEffect>
+                </Entry.Effects>
+            </Entry>
+            <Label Text="Prueba nuevo Font SweetHipster"
+                   effects:FontEffect.FontName="Sweet Hipster">
+                <Label.Effects>
+                    <effects:FontEffect></effects:FontEffect> 
+                </Label.Effects>
+            </Label>
+            <Label Text="Prueba nuevo Font MiracleDay"
+                   effects:FontEffect.FontName="Miracle Day">
+                <Label.Effects>
+                    <effects:FontEffect></effects:FontEffect>
+                </Label.Effects>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
