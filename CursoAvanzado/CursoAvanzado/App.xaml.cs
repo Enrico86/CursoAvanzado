@@ -7,6 +7,7 @@ using CursoAvanzado.Views;
 using CursoAvanzado.Views.Triggers;
 using CursoAvanzado.Views.Behaviors;
 using CursoAvanzado.Views.Effects;
+using CursoAvanzado.Views.CustomRenderers;
 
 namespace CursoAvanzado
 {
@@ -16,7 +17,7 @@ namespace CursoAvanzado
         {
             InitializeComponent();
             Extension.Init();
-            MainPage = new EffectsDemo();
+            MainPage = new CustomRenderersDemo();
         }
 
         protected override void OnStart()

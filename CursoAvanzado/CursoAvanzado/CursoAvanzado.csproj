@@ -30,13 +30,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\Animaciones.xaml">
+    <EmbeddedResource Update="Views\Animations\Animaciones.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\AtributosDeNamespaceX.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\AttachedProperties.xaml">
+    <EmbeddedResource Update="Views\Bindable and Attached Properties\AttachedProperties.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Behaviors\BasicBehaviorPage.xaml">
@@ -45,7 +45,7 @@
     <EmbeddedResource Update="Views\Behaviors\ListViewTest.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\BindableProperties.xaml">
+    <EmbeddedResource Update="Views\Bindable and Attached Properties\BindableProperties.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\CompilacionXAML.xaml">
@@ -57,25 +57,28 @@
     <EmbeddedResource Update="Effects\EfectoLetras.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\EasingFunctions.xaml">
+    <EmbeddedResource Update="Views\Animations\EasingFunctions.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\CustomRenderers\CustomRenderersDemo.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Effects\EffectsDemo.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\MarkupExtensions.xaml">
+    <EmbeddedResource Update="Views\MarkupExtensions\MarkupExtensions.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\MyAnimations.xaml">
+    <EmbeddedResource Update="Views\Animations\MyAnimations.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\PopUpAnimations.xaml">
+    <EmbeddedResource Update="Views\Animations\PopUpAnimations.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\StepperDemo.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Transformaciones.xaml">
+    <EmbeddedResource Update="Views\Animations\Transformaciones.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Triggers\ApprovedPage.xaml">

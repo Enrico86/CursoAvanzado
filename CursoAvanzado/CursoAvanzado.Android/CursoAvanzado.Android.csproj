@@ -69,6 +69,9 @@
     <Compile Include="Effects\SimpleSliderEffect.cs" />
     <Compile Include="Effects\UnderlineEffect.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Renderers\GradientButtonRenderer.cs" />
+    <Compile Include="Renderers\MyEntryRenderer.cs" />
+    <Compile Include="Renderers\PersonalCheckBoxRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

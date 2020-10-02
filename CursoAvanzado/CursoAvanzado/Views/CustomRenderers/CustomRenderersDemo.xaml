@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:CursoAvanzado.Controles"
+             x:Class="CursoAvanzado.Views.CustomRenderers.CustomRenderersDemo">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <controls:MyEntry Placeholder="Soy un Entry modificado"></controls:MyEntry>
+            <Entry Placeholder="Soy un Entry normal"></Entry>
+            <controls:GradientButton Text="Botón con gradiente"
+                                     TextColor="White"
+                                     FontAttributes="Bold"
+                                     BackgroundColor="DarkBlue"
+                                     controls:GradientButton.ColorBottom="Red"
+                                     x:Name="gradientButtonCheckState">
+            </controls:GradientButton>
+            <controls:PersonalCheckBox x:Name="coolCheckBox"></controls:PersonalCheckBox>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
