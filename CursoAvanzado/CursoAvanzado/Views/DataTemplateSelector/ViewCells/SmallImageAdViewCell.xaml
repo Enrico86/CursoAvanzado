@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CursoAvanzado.Views.DataTemplateSelector.ViewCells.SmallImageAdViewCell">
+  <ViewCell.View>
+        <Grid Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width=".6*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Source="{Binding ImageUrl1}"
+                   VerticalOptions="Center"
+                   WidthRequest="100"
+                   HeightRequest="100"></Image>
+            <StackLayout Grid.Column="1">
+                <Label Text="{Binding TitleAd}"></Label>
+                <Label Text="{Binding Text}"></Label>
+                <Label Text="{Binding PublicationDate}"
+                       HorizontalTextAlignment="End"></Label>
+            </StackLayout>
+        </Grid>
+  </ViewCell.View>
+</ViewCell>

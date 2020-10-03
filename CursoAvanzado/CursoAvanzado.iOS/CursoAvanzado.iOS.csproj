@@ -75,6 +75,7 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\ad.jpg" />
     <Content Include="Resources\Miracle Day.ttf" />
     <Content Include="Resources\Sweet Hipster.ttf" />
   </ItemGroup>

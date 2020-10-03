@@ -100,7 +100,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ad.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\XamlNamespaces.Controls\XamlNamespaces.Controls.csproj">
       <Project>{b4b3b97c-cb3c-4300-a15f-9b2655274aa6}</Project>

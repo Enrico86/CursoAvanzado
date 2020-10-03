@@ -8,6 +8,7 @@ using CursoAvanzado.Views.Triggers;
 using CursoAvanzado.Views.Behaviors;
 using CursoAvanzado.Views.Effects;
 using CursoAvanzado.Views.CustomRenderers;
+using CursoAvanzado.Views.DataTemplateSelector;
 
 namespace CursoAvanzado
 {
@@ -17,7 +18,7 @@ namespace CursoAvanzado
         {
             InitializeComponent();
             Extension.Init();
-            MainPage = new CustomRenderersDemo();
+            MainPage = new DataTemplateSelectorPage();
         }
 
         protected override void OnStart()
